@@ -1,20 +1,31 @@
 import Form from "./Form";
+// const fscInfoArray = [
+//     "Matric",
+//     "FSc",
+//     "NET",
+// ];
 
-const fscInfoArray = [
+// const ALevelsInfoArray = [
+//     "MatricEquivalance",
+//     "NET",
+// ];
+const info = {
+  FSc:[
     "Matric",
     "FSc",
     "NET",
-];
-
-const ALevelsInfoArray = [
+  ],
+  "A levels":[
     "MatricEquivalance",
     "NET",
-];
-
-function Content({setAgg,tab}) {
-  console.log(tab)
-  if(tab === 'FSc') return <Form key={fscInfoArray[0]} infoArray={fscInfoArray} setAgg={setAgg} tab={tab}/>
-  if(tab === 'A levels') return <Form key={ALevelsInfoArray[0]} infoArray={ALevelsInfoArray} setAgg={setAgg} tab={tab}/>
+  ]
 }
+
+function Content({ setAgg, tab }) {
+  const infoArray = info[tab];
+
+  return <Form key={infoArray[0]} infoArray={infoArray} setAgg={setAgg} tab={tab} />;
+}
+
 
 export default Content

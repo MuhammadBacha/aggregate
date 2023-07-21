@@ -5,6 +5,7 @@ import Content from './Content';
 
 function App() {
   const [tab,setTab] = useState('FSc');
+  const a = 'nothing';
   return (
     <div className='flex flex-col h-[100vh] items-center overflow-scroll'>
       <h1 className='text-3xl font-bold p-1'>AGGREGATE CALCULATOR</h1>
