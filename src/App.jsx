@@ -8,7 +8,7 @@ function App() {
   const a = 'nothing';
   return (
     <div className='flex flex-col h-[100vh] items-center overflow-scroll'>
-      <h1 className='text-3xl font-bold p-1'>AGGREGATE CALCULATOR</h1>
+      <h1 className='text-3xl font-bold p-1 text-center'>AGGREGATE CALCULATOR</h1>
       <div className='border-2 border-solid border-black'>
         <h1 className='text-center'>Select your intermediate programme</h1>
         <div className='grid grid-cols-2 text-center text-xl'>
