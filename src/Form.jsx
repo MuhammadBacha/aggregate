@@ -10,7 +10,7 @@ function calcAggregate(type,{Matric, MatricTotal,FSc,FScTotal,MatricEquivalance,
 function Form({tab,infoArray}) {
   const [agg,setAgg] = useState();
   const {register,handleSubmit,getValues,formState:{errors}} = useForm();
-  console.log(infoArray);
+  // console.log(infoArray);
   function onSubmit(formData){
     const {Matric, MatricTotal,FSc,FScTotal,NET,MatricEquivalance,MatricEquivalanceTotal} = formData;
     setAgg(calcAggregate(tab,{Matric, MatricTotal,FSc,FScTotal,NET,MatricEquivalance,MatricEquivalanceTotal}));
