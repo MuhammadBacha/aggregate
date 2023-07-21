@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Tab from './Tab'
-import Form from './Form'
 import Content from './Content';
 
 function App() {
